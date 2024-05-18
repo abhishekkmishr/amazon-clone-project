@@ -18,7 +18,7 @@ const ProductPage = () => {
       <h1>{product.title}</h1>
       <p>{product.description}</p>
       <img src={product.image} alt={product.title} />
-      <p>Price: ${product.price}</p>
+      <p>Price: ₹{product.price}</p>
     </div>
   );
 };

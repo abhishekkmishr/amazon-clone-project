@@ -14,7 +14,7 @@ const ProductPage = () => {
   }
 
   return (
-        <div className='mx-auto m-auto bg-gray-100 grid px-4'>
+        <div className='mx-auto m-auto bg-gray-100 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 xl:gap-4 px-4 mt-3 item-center justify-center'>
 
         <div 
         className='bg-white h-auto item-center justify-center border-[1px] rounded-md border-gray-300 py-6 z-30 hover:border-transparent shadow-none hover:shadow-testShadow duration-200 relative flex flex-col gap-4'>

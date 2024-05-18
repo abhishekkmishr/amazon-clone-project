@@ -23,14 +23,14 @@ const ProductPage = () => {
           src={product.image} 
          alt="ProductImage" />
           </div>
-           <div className='px-4 bg-white flex flex-col gap-1 z-10"'>
-           <h2 className='font-titleFont tracking-wide text-xl text-[#131921] font-extrabold'>
+           <div className='px-4 bg-white flex flex-col gap-1 z-10 items-center justify-center"'>
+           <h2 className='font-titleFont tracking-wide text-xl text-[#131921] font-extrabold items-center justify-center'>
             {product.title.substring(0, 20)}</h2>
                {/* ---------Product Price ---------- */}
-          <p className='text-lg text-gray-700 font-semibold'>
+          <p className='text-lg text-gray-700 font-semibold items-center justify-center'>
             ₹{product.price}</p>
            </div>
-            <p className=" font-bodyFont text-lg">{product.description.substring(0, 100)}</p>
+            <p className=" font-bodyFont text-lg items-center justify-center">{product.description.substring(0, 100)}</p>
 
         </div>
         </div>

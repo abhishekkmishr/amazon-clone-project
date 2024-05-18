@@ -1,11 +1,12 @@
 // src/components/ProductPage.js
 
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { useLoaderData, useParams } from 'react-router-dom';
 import StarIcon from '@mui/icons-material/Star';
 
 const ProductPage = () => {
+  const dispatch = useDispatch();
   const { id } = useParams();
   const data = useLoaderData();
   const products = data.data;

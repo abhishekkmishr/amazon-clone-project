@@ -3,6 +3,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useLoaderData, useParams } from 'react-router-dom';
+import StarIcon from '@mui/icons-material/Star';
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -31,6 +32,33 @@ const ProductPage = () => {
             ₹{product.price}</p>
            </div>
             <p className=" font-bodyFont text-lg items-center justify-center">{product.description.substring(0, 100)}</p>
+           <div className="text-yellow-500 flex">
+                <StarIcon />
+                <StarIcon />
+                <StarIcon />
+                <StarIcon />
+                <StarIcon />
+              </div>
+            </div>
+            <button
+              onClick={() =>
+                dispatch(
+                  addToCart({
+                    id: product.id,
+                    title: product.title,
+                    description: product.description,
+                    price: product.price,
+                    category: product.category,
+                    image: product.image,
+                    quantity: 1,
+                  })
+                )
+              }
+              className="w-full py-1.5 rounded-md mt-3 font-titleFont font-medium text-base bg-gradient-to-tr from-yellow-400 to-yellow-200 border border-yellow-500 hover:border-yellow-700 hover:from-yellow-300 to hover:to-yellow-400 active:bg-gradient-to-bl active:from-yellow-400 active:to-yellow-500 duration-200"
+            >
+              Add to Cart
+            </button>
+          </div>
 
         </div>
         </div>

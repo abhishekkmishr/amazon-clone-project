@@ -89,7 +89,7 @@ const Registration = () => {
       cPassword &&
       cPassword === password
     ) {
-      Loading(true)
+      loading(true)
       createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     updateProfile(auth.cur.currentUser,{

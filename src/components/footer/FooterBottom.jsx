@@ -33,15 +33,12 @@ const FooterBottom = () => {
         </div>
         <div>
           <p className="font-normal text-[12px] text-[#DDD] leading-3">
-            © 1996-2022, Amazon.com, Inc. or its affiliates
+            © 1996-2024, Amazon.com, Inc. or its affiliates
           </p>
         </div>
       </div>
       {/* ======================= Bottom End here ===================== */}
-      {/* ============ Top Start here ================== */}
-      {/* ============ Top End here ==================== */}
-      {/* ============ Bottom Start here =============== */}
-      {/* ============ Bottom End here ================= */}
+     
     </div>
   );
 };

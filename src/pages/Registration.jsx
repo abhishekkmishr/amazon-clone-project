@@ -21,7 +21,7 @@ const Registration = () => {
   const [errCPassword, setErrCPassword] = useState("");
   const [firebaseErr,setFirebaseErr] =useState("") 
    // Loading State start
-   const [Loading,setLoading] =useState(false)
+   const [loading,setLoading] =useState(false)
    const [successMsg,setSuccessMsg] =useState("")
 
 

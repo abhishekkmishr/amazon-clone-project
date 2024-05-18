@@ -1,3 +1,4 @@
+//This a SideNavbar which shows the categories of the products
 import React from "react";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 

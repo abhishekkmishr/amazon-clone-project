@@ -120,7 +120,7 @@ const Cart = () => {
               </p>
               <div>
                 <p className="font-semibold px-6 py-1 flex items-center justify-between">
-                  Total: <span className="text-lg font-bold">${totalAmt}</span>
+                  Total: <span className="text-lg font-bold">₹{totalAmt}</span>
                 </p>
               </div>
               <button className="w-full font-titleFont font-medium text-base bg-gradient-to-tr from-yellow-400 to-yellow-200 border hover:from-yellow-300 hover:to-yellow-400 border-yellow-500 hover:border-yellow-700 active:bg-gradient-to-bl active:from-yellow-400 active:to-yellow-500 duration-200 py-1.5 rounded-md mt-3">

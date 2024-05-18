@@ -1,3 +1,5 @@
+//This page contains the details of the Products like product image, product title, product description, product price, product rating and AddToCart Button
+
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import StarIcon from "@mui/icons-material/Star";
@@ -66,7 +68,7 @@ const Products = () => {
                 {item.title.substring(0, 20)}
               </h2>
               <p className="text-sm text-gray-600 font-semibold">
-                ${item.price}
+                ₹{item.price}
               </p>
             </div>
             <div>

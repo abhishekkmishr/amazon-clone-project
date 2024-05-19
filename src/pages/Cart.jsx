@@ -1,3 +1,6 @@
+//This an add-to-cart page that contains information on products that are added to the cart, Total price, Delete item button, Clear cart button and
+//Procced to buy page 
+
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
@@ -57,7 +60,7 @@ const Cart = () => {
                       <p className="xl:pr-10 text-sm">{item.description}</p>
                       <p className="text-base">
                         Unit Price:{" "}
-                        <span className="font-semibold">${item.price}</span>
+                        <span className="font-semibold">₹{item.price}</span>
                       </p>
                       <div className="bg-[#F0F2F2] flex justify-center items-center gap-2 w-36 py-1 text-center drop-shadow-lg rounded-md">
                         <p className="text-base font-normal">Qty:</p>
@@ -91,7 +94,7 @@ const Cart = () => {
 
                     <div className="w-full md:w-24">
                       <p className="text-lg xl:w-24 font-titleFont font-semibold">
-                        ${item.price * item.quantity}
+                        ₹{item.price * item.quantity}
                       </p>
                     </div>
                     {/* ====================== Right End here ============================= */}
@@ -117,7 +120,7 @@ const Cart = () => {
               </p>
               <div>
                 <p className="font-semibold px-6 py-1 flex items-center justify-between">
-                  Total: <span className="text-lg font-bold">${totalAmt}</span>
+                  Total: <span className="text-lg font-bold">₹{totalAmt}</span>
                 </p>
               </div>
               <button className="w-full font-titleFont font-medium text-base bg-gradient-to-tr from-yellow-400 to-yellow-200 border hover:from-yellow-300 hover:to-yellow-400 border-yellow-500 hover:border-yellow-700 active:bg-gradient-to-bl active:from-yellow-400 active:to-yellow-500 duration-200 py-1.5 rounded-md mt-3">

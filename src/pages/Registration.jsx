@@ -288,6 +288,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import { darkLogo } from "../assets/index";
+import { RotatingLines } from 'react-loader-spinner';
+
 
 const Registration = () => {
   const auth = getAuth();
@@ -501,9 +503,33 @@ const Registration = () => {
               <button
                 onClick={handleRegistration}
                 className="w-full py-1.5 text-sm font-normal rounded-sm bg-gradient-to-t from-[#f7dfa5] to-[#f0c14b] hover:bg-gradient-to-b border border-zinc-400 active:border-yellow-800 active:shadow-amazonInput"
-              >
+            >
                 Continue
               </button>
+               {
+          loading && (
+            <div className='flex justify-center'>
+              <RotatingLines
+                      visible={true}
+                      height="96"
+                      width="50"
+                      strokeColor="#f3a847"
+                      strokeWidth="5"
+                      animationDuration="0.75"
+                      ariaLabel="rotating-lines-loading"
+                      wrapperStyle={{}}
+                      wrapperClass=""
+                      />
+            </div>
+          )}
+          {
+            successMsg && (
+              <div className='text-base font-titleFont font-semibold text-green-600 border-[1px]
+              border-green-500 px-2 py-2 text-center'>
+                {successMsg}
+                 </div>
+                 )
+                 }
             </div>
             <p className="text-xs text-black leading-4 mt-4">
               By Continuing, you agree to Amazon's{" "}
@@ -545,7 +571,7 @@ const Registration = () => {
           </p>
         </div>
         <p className="text-xs text-gray-600">
-          © 1996-2023, ReactBd.com, Inc. or its affiliates
+          © 1996-2024, ReactBd.com, Inc. or its affiliates
         </p>
       </div>
     </div>
